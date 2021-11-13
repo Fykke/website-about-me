@@ -25,7 +25,7 @@
             <ul>
                 <li><a href="#top"><button onclick = "replace_div(current_div,'div1', 'assets/dodge1.png'); changediv_var( 'div1' ); replace_photo('content_photo1', 1);" class="navbar_button">First project</button></a></li>
                 <li><a href="#top"><button onclick = "replace_div(current_div,'div2', 'assets/excel1.png'); changediv_var( 'div2' ); replace_photo('content_photo2', 1);" class="navbar_button">Second project</button></a></li>
-                <li><a href="#top"><button onclick = "replace_div(current_div,'div3'); changediv_var( 'div3' )" class="navbar_button">Third project</button></a></li>
+                <li><a href="#top"><button onclick = "replace_div(current_div,'div3', 'assets/auth1.png'); changediv_var( 'div3' ); replace_photo('content_photo3', 1);" class="navbar_button">Third project</button></a></li>
                 <li><a href="#top"><button onclick = "replace_div(current_div,'div4'); changediv_var( 'div4' )" class="navbar_button">Fourth project</button></a></li>
                 <li><a href="#top"><button onclick = "replace_div(current_div,'div5'); changediv_var( 'div5' )" class="navbar_button">Fifth project</button></a></li>
                 <li><a href="#top"><button onclick = "replace_div(current_div,'div6'); changediv_var( 'div6' )" class="navbar_button">Sixth project</button></a></li>
@@ -40,6 +40,7 @@
                 <div class="content_gallery">
 
                     <button class="gallery_button" onclick="replace_photo('content_photo1', 8)">></button>
+                    <button class="gallery_button2" onclick="replace_photo_back('content_photo1', 8)"><</button>
                     <img src="assets/dodge1.png" class="content_photo" id="content_photo1">
 
                     <video src="assets/video1.mkv" class="content_video" id="content_video1" controls></video>
@@ -96,7 +97,7 @@
                     To provide random ball position to fly from, I used <span class=span_modules>randint</span> and <span class=span_modules>choice</span> from
                      module <span class=span_modules>random.</span><br>
                     To create an exe file have been used <span class=span_modules>pyinstaller.</span><br>
-                    I used a lot of  loops, functions and also used try/catch constructions to work with files.<br><br>Also I created an anti AFK system:<br>
+                    I used a lot of  loops, functions and also used try/except constructions to work with files.<br><br>Also I created an anti AFK system:<br>
                     If a player decides to stay on one place to get a lot of points, after approximately 3 seconds the game will throw a ball right at him and he will lose.<br><br>
                     
                     Github link: <a href="https://github.com/Fykke/Dodge" target="_blank" class="content_github_link">https://github.com/Fykke/Dodge</a>
@@ -112,6 +113,7 @@
                 <div class="content_gallery">
 
                     <button class="gallery_button" onclick="replace_photo('content_photo2', 4)">></button>
+                    <button class="gallery_button2" onclick="replace_photo_back('content_photo2', 4)"><</button>
                     <img src="assets/excel1.png" class="content_photo" id="content_photo2">
 
                     <video src="assets/video2.mkv" class="content_video" id="content_video2" controls></video>
@@ -162,6 +164,7 @@
                     <span class=span_modules>Collections.</span>
                     <br><br>In these type of programs is better to use a C languages, because they are much faster.<br> But in that moment
                     i knew only Python and also it's not an actual product so there is no need to make it as fast as possible.
+
                     <br><br>You can try it yourself! <span style="color: black;"> &#x21B4;</span>
                     <br><br>Github link: <a href="https://github.com/Fykke/Excel-data-comparing" target="_blank" class="content_github_link">
                         https://github.com/Fykke/Excel-data-comparing
@@ -175,8 +178,55 @@
 
                 <div class="content_gallery">
 
-                    <button class="gallery_button" onclick="replace_photo('content_photo3', 8)">></button>
+                    <button class="gallery_button" onclick="replace_photo('content_photo3', 12)">></button>
+                    <button class="gallery_button2" onclick="replace_photo_back('content_photo3', 12)"><</button>
                     <img src="assets/auth1.png" class="content_photo" id="content_photo3">
+
+                    <video src="assets/video3.mkv" class="content_video" id="content_video3" controls></video>
+                </div>
+
+                <div class="content_text">
+                    <br>Third project is an authorization/registration program with a profile.<br>
+                    The project is finished approximately in 29th of January, 2021.<br><br>
+                    The goal was to learn how to work with data.<br><br>
+                    I didn't really know what database is and I thought it is something really difficult, that is why at
+                    first i saved all the data like logins and passwords in a simple txt document. After I've decided to add
+                    an additional options to users (for example, to save their age, country, to change name) I understoot that it is 
+                    impossible to store all the data in the simple txt document. <br>
+                    Then I put my eyes on <span class=span_modules>Json.</span><br>
+                    There storing all the data is very much possible!
+                    <br><br>
+                    Also I had no clue that something like <span class=span_modules>Regex</span> exists, that's why
+                    to controll all the inputs from user, i wrote something like:<br><br>
+                    <span class=span_modules>If password length is less than 10, print an error</span><br>
+                    <br>Now I see, that it could have been done so much easier, just using <span class=span_modules>MySQL</span> and <span class=span_modules>Regex.</span>
+                    <br>But this program was interesting to do without all these features :D
+
+                    <br><br><br><span style="font-size: 24px;">Other: </span><br><br>
+                    After logging in, user can change his data:
+                    <ul class="content_ul">
+                        <li>User name</li>
+                        <li>Status (any text)</li>
+                        <li>Age</li>
+                        <li>Country</li>
+                        <li>Sex</li>
+                        <li>Password</li>
+                    </ul> <br>
+                    And of course user can also log out and create a new account, log in to another or close the program.
+
+                    <br><br><br><span style="font-size: 24px;">About code: </span><br><br>
+                    Program is created with the help of <span class=span_modules>Python.</span><br>
+                    The interface is done with the <span class=span_modules>Tkinter</span> package.<br>
+                    To work with computer files (.txt at first, then .json) imported <span class=span_modules>os.</span><br>
+                    Also imported <span class=span_modules>countries</span> from <span class=span_modules>iso3166</span>
+                    (just a list of all the countries), to let user select his country in the profile.<br>
+                    If user will try to delete <span class=span_modules>data.json</span>, program will see it in
+                    <span class=span_modules>try/except</span> construction and will create new clear <span class=span_modules>data.json</span>.
+                    
+                    <br><br>You can download a program or just see the code <span style="color: black;"> &#x21B4;</span>
+                    <br><br>Github link: <a href="https://github.com/Fykke/Authorization" target="_blank" class="content_github_link">
+                        https://github.com/Fykke/Authorization
+                    </a>
                 </div>
 
             </div>
