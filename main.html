@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <script src="scripts.js"></script>
+</head>
+<body>
+
+    <div class="header">
+        <div id="photo_container">
+            <img src="assets/photo.png" id="photo">
+        </div>
+        <div id="logo_container">
+            <h1><a href="main.html" id="logo_link">MY PORTFOLIO</a></h1>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div id="navbar">
+            <ul>
+                <li><a href="#top"><button onclick = "replace_div(current_div,'div1', 'assets/dodge1.png'); changediv_var( 'div1' ); replace_photo('content_photo1', 1);" class="navbar_button">First project</button></a></li>
+                <li><a href="#top"><button onclick = "replace_div(current_div,'div2', 'assets/excel1.png'); changediv_var( 'div2' ); replace_photo('content_photo2', 1);" class="navbar_button">Second project</button></a></li>
+                <li><a href="#top"><button onclick = "replace_div(current_div,'div3'); changediv_var( 'div3' )" class="navbar_button">Third project</button></a></li>
+                <li><a href="#top"><button onclick = "replace_div(current_div,'div4'); changediv_var( 'div4' )" class="navbar_button">Fourth project</button></a></li>
+                <li><a href="#top"><button onclick = "replace_div(current_div,'div5'); changediv_var( 'div5' )" class="navbar_button">Fifth project</button></a></li>
+                <li><a href="#top"><button onclick = "replace_div(current_div,'div6'); changediv_var( 'div6' )" class="navbar_button">Sixth project</button></a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+
+            <div id="div1" style="display:block" class="contentdivs">
+                <h1 class="content_head">Dodge</h1>
+                
+                <div class="content_gallery">
+
+                    <button class="gallery_button" onclick="replace_photo('content_photo1', 8)">></button>
+                    <img src="assets/dodge1.png" class="content_photo" id="content_photo1">
+
+                    <video src="assets/video1.mkv" class="content_video" id="content_video1" controls></video>
+                </div>
+
+                <div class="content_text">
+                    <br>My favorite project is my game called "Dodge".<br>
+                    I wrote the first version of it around February 10, 2021.<br>
+                    Finally completed the project on March 7th.
+
+                    <br><br><br><span style="font-size: 24px;">About the game process: </span><br><br>
+                    The point of the game is that the player playing as the square needs to dodge the balls flying to the left from the right frame.
+                    The square is controlled by pressind WASD keys. 
+                    <br>Every 5 points, the balls slightly increase their speed, which complicates the dodging process. <br><br>
+
+                    Player can't escape the playing field:<br> 
+                    <ul class="content_ul">
+                        <li>If player passes the frame from above, he will be moved down in the opposite direction</li>
+                        <li>The same happens if the player goes up</li>
+                        <li>Going to the left, the player crashes into the frame</li>
+                    </ul>
+
+                    <br><br><span style="font-size: 24px;">Other: </span><br><br>
+                    The main menu has settings and a leaderboard.<br>
+                    In the settings, player can customize the sound, interface and audio.<br>
+                    In the "Theme" section player can change game interface colors. There are 4 options.<br>
+                    In the "Audio" section player can change the volume. Is scaled from 1 to 10.<br>
+                    The "Skin" section, as the name suggests, gives the opportunity to change the player's skin.<br><br>
+                    Applying all settings does not require restarting the game.
+
+                    <br><br>After the game is openned, it randomly decides what skin will be used. It won't be changed after death.
+                    <br>The skin of the ball will change randomly after every lose. (two of the ball's skin are my friend's face &#128520. Other skins
+                    are the ones that I made in Photoshop using my imagination or redrawn by me items from Minecraft)
+
+                    <br><br><span style="font-weight: 600;">After player collides with the ball: </span><br><br>
+                    The game will show:<br>Time alive (seconds), score (how many times the ball reached left frame), and a few options: <br>
+                    <ul class="content_ul">
+                        <li>Play again</li>
+                        <li>To the menu</li>
+                        <li>Save score (requires to type player's name)</li>
+                    </ul> 
+
+                    <br><br><span style="font-size: 24px;">Leaderboard:</span><br><br>
+                    Actually, it is not correct to name it "scoreboard", because it is "leaderboard". Only after i had done this part of the page
+                    I noticed this mistake in the game. And it's kind of late to make any changes. I can, but don't want to.<br>
+                    So, about the leaderboard. It reads the json file and simply prints all the data from the file. And sorts it by value i.e.
+                    collected points (descending).
+
+                    <br><br><br><span style="font-size: 24px;">What have been used: </span><br><br>
+                    I used my favourite language <span class=span_modules>Python.</span><br>All the logic in my game is made on this language.<br>
+                    All the visual part of the game as well as the sounds are made on <span class=span_modules>pygame.</span><br>
+                    Also to work with data I imported <span class=span_modules>json</span>, <span class=span_modules>os</span> 
+                    and <span class=span_modules>sys.</span><br>
+                    To provide random ball position to fly from, I used <span class=span_modules>randint</span> and <span class=span_modules>choice</span> from
+                     module <span class=span_modules>random.</span><br>
+                    To create an exe file have been used <span class=span_modules>pyinstaller.</span><br>
+                    I used a lot of  loops, functions and also used try/catch constructions to work with files.<br><br>Also I created an anti AFK system:<br>
+                    If a player decides to stay on one place to get a lot of points, after approximately 3 seconds the game will throw a ball right at him and he will lose.<br><br>
+                    
+                    Github link: <a href="https://github.com/Fykke/Dodge" target="_blank" class="content_github_link">https://github.com/Fykke/Dodge</a>
+                    <br><br>Enjoy the game! <span style="color: red;">&#9829;</span>
+                    
+                </div>
+                
+            </div>
+
+            <div id="div2" style="display:none" class="contentdivs">
+                <h1 class="content_head">Excel data comparing</h1>
+
+                <div class="content_gallery">
+
+                    <button class="gallery_button" onclick="replace_photo('content_photo2', 4)">></button>
+                    <img src="assets/excel1.png" class="content_photo" id="content_photo2">
+
+                    <video src="assets/video2.mkv" class="content_video" id="content_video2" controls></video>
+                </div>
+
+                <div class="content_text">
+                    <br>My second (order not based on project creation date), more useful project, is a program that helps my mom with her work.<br>
+                    The latest version of the project was created around June 28, 2021.<br>
+                    Writing, if I'm not mistaken, took a couple of days, although the program is quite easy, 
+                    since I had absolutely no idea how to work with Excel using code.
+                    <br><br>With this project I really helped my mother a lot.<br>
+                    Now, instead of losing a few days on reading nad comparing numbers, my program is doing it in a seconds.<br>
+
+                    <br><br><br><span style="font-size: 24px;">What has to be done: </span><br><br>
+                    Mom has tons of data at work. Sales column and purchases column (contain the exact price of the item). 
+                    She has to compare these two columns, and the ideal result is a complete match of both columns. 
+                    But this never happens, because someone constantly makes mistakes in filling out, or data on any 
+                    purchases and sales simply do not come due to various reasons.
+                    <br><br>After comparing the tables (usually contains about 750 sales and 750 purchases), always 5 to 20
+                    inequalities are revealed. Then she needs to figure out what these inequalities are, and why they appeared.
+                    
+                    <br><br><br><span style="font-size: 24px;">What my program is doing: </span><br><br>
+                    First of all, it is a console program and after opening an exe file, it will print to the console an example of
+                    what the user should write in.<br>
+                    User has to enter the name of the <span class=span_modules>.xmls</span> file that exists in the same directory
+                    as the program exe file. If it doesn't exist, the program will stop working and will be closed.<br><br>
+                    Also, in the excel file all the data should be written in the first 2 columns (A and B), if it is not, program
+                    will not work correctly.
+
+                    <br><br><span style="font-weight: 600;">If file exists and everything is fine: </span><br><br>
+                    The program will: <br>
+                    <ul class="content_ul">
+                        <li>Print "Updated", in the next line elapsed time since the start of the program and will close itself</li>
+                        <li>Then it will update an existing Excel file</li>
+                        <li>In the D column it will print all the data that exist in the A column, but did not find a pair (the same number) in the B column</li>
+                        <li>In the E column it will print all the data that exist in the B column, but did not find a pair in the A column</li>
+                    </ul> 
+                    
+                    <br><br><br><span style="font-size: 24px;">What have been used: </span><br><br>
+                    This time i also worked with <span class=span_modules>Python.</span><br>
+                    To create an exe file have been used <span class=span_modules>pyinstaller.</span><br>
+                    To open and rewrite an Excel file I used <span class=span_modules>openpyxl</span> module and imported
+                    <span class=span_modules>os</span> to see computer's files.
+                    Also, I wanted it to have at least some kind of beauty, I imported <span class=span_modules>time</span>, to
+                    print elapsed time in the console as well as <span class=span_modules>Font, Color, Border, colors, Side</span> from
+                    <span class=span_modules>openpyxl</span>.<br>
+                    And of course the data comparing. It is done with the help <span class=span_modules>Counter</span> imported from
+                    <span class=span_modules>Collections.</span>
+                    <br><br>In these type of programs is better to use a C languages, because they are much faster.<br> But in that moment
+                    i knew only Python and also it's not an actual product so there is no need to make it as fast as possible.
+                    <br><br>You can try it yourself! <span style="color: black;"> &#x21B4;</span>
+                    <br><br>Github link: <a href="https://github.com/Fykke/Excel-data-comparing" target="_blank" class="content_github_link">
+                        https://github.com/Fykke/Excel-data-comparing
+                    </a>
+                </div>
+                
+            </div>
+
+            <div id="div3" style="display:none" class="contentdivs">
+                <h1 class="content_head">Authorization</h1>
+                <h1>DIV3</h1>
+                <h1>DIV3</h1>
+                <h1>DIV3</h1>
+                <h1>DIV3</h1>
+            </div>
+
+            <div id="div4" style="display:none" class="contentdivs">
+                <h1 class="content_head">Rock paper scissors</h1>
+                <h1>DIV4</h1>
+                <h1>DIV4</h1>
+                <h1>DIV4</h1>
+                <h1>DIV4</h1>
+            </div>
+
+            <div id="div5" style="display:none" class="contentdivs">
+                <h1 class="content_head">Calculator</h1>
+                <h1>DIV5</h1>
+                <h1>DIV5</h1>
+                <h1>DIV5</h1>
+                <h1>DIV5</h1>
+                <h1>DIV5</h1>
+                <h1>DIV5</h1>
+                <h1>DIV5</h1>
+                <h1>DIV5</h1>
+                <h1>DIV5</h1>
+                <h1>DIV5</h1>
+                <h1>DIV5</h1>
+                <h1>DIV5</h1>
+                <h1>DIV5</h1>
+                <h1>DIV5</h1>
+                <h1>DIV5</h1>
+                <h1>DIV5</h1>
+                <h1>DIV5</h1>
+                <h1>DIV5</h1>
+                <h1>DIV5</h1>
+                <h1>DIV5</h1>
+                <h1>DIV5</h1>
+                <h1>DIV5</h1>
+            </div>
+
+            <div id="div6" style="display:none" class="contentdivs">
+                <h1 class="content_head">Just a meme</h1>
+                <h1>DIV6</h1>
+                <h1>DIV6</h1>
+                <h1>DIV6</h1>
+                <h1>DIV6</h1>
+                <h1>DIV6</h1>
+                <h1>DIV6</h1>
+                <h1>DIV6</h1>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+        <div id="mail">
+            crabhanded@gmail.com
+        </div>
+
+        <div id="github">
+            <a href="https://github.com/Fykke" target="_blank">My github</a>
+        </div>
+
+    </div>
+</body>
+</html>
