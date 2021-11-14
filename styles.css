@@ -15,6 +15,7 @@ body {
     width: 100%;
     height: 10vh;
     font-family: 'Dancing Script';
+    font-size: 12px;
 }
 
 #photo_container {
@@ -31,14 +32,8 @@ body {
 }
 
 #logo_container {
-    background-color: #382f2f;
-    color: rgb(255, 232, 232);
-    width: 14.45vw;
     height: 10vh;
-    display: table-cell;
-    vertical-align: middle;
-    padding-left: 1vh;
-    text-align: center;
+    width: 6.3vw;
 }
 
 #logo_link:hover {
