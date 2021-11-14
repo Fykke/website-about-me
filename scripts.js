@@ -9,9 +9,8 @@ window.onbeforeunload = function () {
 }
 
 function replace_div( hide, show, photo_name ) {
-    if ( hide == show ) {
-        return;
-    }
+    if ( hide == show ) return;
+
     document.getElementById( show ).style.display="block";
     document.getElementById( hide ).style.display="none";
     current_photo = photo_name;

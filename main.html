@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Maksim Sokolov</title>
     <script src="scripts.js"></script>
 </head>
 <body>
@@ -36,7 +36,7 @@
 
             <div id="div1" style="display:block" class="contentdivs">
                 <h1 class="content_head">Dodge</h1>
-                
+
                 <div class="content_gallery">
 
                     <button class="gallery_button" onclick="replace_photo('content_photo1', 8)">></button>
@@ -196,8 +196,8 @@
                     Then I put my eyes on <span class=span_modules>Json.</span><br>
                     There storing all the data is very much possible!
                     <br><br>
-                    Also I had no clue that something like <span class=span_modules>Regex</span> exists, that's why
-                    to controll all the inputs from user, i wrote something like:<br><br>
+                    Also I had no clue that something like <span class=span_modules>Regex</span> even exists, that's why
+                    to control all the inputs from user, i wrote something like:<br><br>
                     <span class=span_modules>If password length is less than 10, print an error</span><br>
                     <br>Now I see, that it could have been done so much easier, just using <span class=span_modules>MySQL</span> and <span class=span_modules>Regex.</span>
                     <br>But this program was interesting to do without all these features :D
@@ -233,47 +233,94 @@
 
             <div id="div4" style="display:none" class="contentdivs">
                 <h1 class="content_head">Rock paper scissors</h1>
-                <h1>DIV4</h1>
-                <h1>DIV4</h1>
-                <h1>DIV4</h1>
-                <h1>DIV4</h1>
+                <div class="content_gallery">
+                    <video src="assets/video4.mkv" class="content_video" id="content_video4" controls></video>
+                </div>
+
+                <div class="content_text"> 
+                    <br>This is my first "big" project, which I started on November 21, 2020 and finished around December 6. 
+                    This game I also presented as a creative practical work for the end of the first 
+                    semester of the first year.<br> Started developing this mini-game even before the 
+                    practical assignment was announced.
+
+                    <br><br><br><span style="font-size: 24px;">About game: </span><br><br>
+
+                    In fact, there is not much to say about it. A simple, well-known game 
+                    "Rock paper scissors". <br>There are four buttons in the game:
+                    <ul class="content_ul">
+                        <li>Choose rock</li>
+                        <li>Choose scissors</li>
+                        <li>Choose paper</li>
+                        <li>Start a new game</li>
+                    </ul> <br>
+
+                    After the player chooses a stone, paper or scissors, the computer also randomly makes 
+                    its choice. And according to the usual laws of this game <span class=span_modules>(rock beats scissors, scissors 
+                    beat paper, paper beats rock)</span>, the code chooses the winner and gives him one point. 
+                    <br>Whoever gets 5 points first wins.
+                    <br>To play again user can press the reload button and points will be reset to zero.
+
+                    <br><br><br><span style="font-size: 24px;">About code: </span><br><br>
+                    This program is written on <span class=span_modules>Python</span> and the interface
+                    is done using <span class=span_modules>Tkinter.</span>
+                    To let the computer select rock, paper or scissors, I used <span class=span_modules>random.</span>
+
+                    <br><br><span style="font-size: 24px;">Other: </span><br><br>
+                    Since this is my first program and I didn’t have any special knowledge, it was very difficult to make it.<br>
+                    The main issues were with understanding how to work with <span class=span_modules>Tkinter</span>, because 
+                    I knew absolutely nothing about it.
+
+                    <br><br>As usual, you can download the game and play, but I don't really
+                    suggest it, because it's not very interesting to play against bot :)<span style="color: black;"> &#x21B4;</span>
+                    <br><br>Github link: <a href="https://github.com/Fykke/Rock-scissors-paper" target="_blank" class="content_github_link">
+                        https://github.com/Fykke/Rock-scissors-paper
+                    </a>
+                </div>
             </div>
 
             <div id="div5" style="display:none" class="contentdivs">
                 <h1 class="content_head">Calculator</h1>
-                <h1>DIV5</h1>
-                <h1>DIV5</h1>
-                <h1>DIV5</h1>
-                <h1>DIV5</h1>
-                <h1>DIV5</h1>
-                <h1>DIV5</h1>
-                <h1>DIV5</h1>
-                <h1>DIV5</h1>
-                <h1>DIV5</h1>
-                <h1>DIV5</h1>
-                <h1>DIV5</h1>
-                <h1>DIV5</h1>
-                <h1>DIV5</h1>
-                <h1>DIV5</h1>
-                <h1>DIV5</h1>
-                <h1>DIV5</h1>
-                <h1>DIV5</h1>
-                <h1>DIV5</h1>
-                <h1>DIV5</h1>
-                <h1>DIV5</h1>
-                <h1>DIV5</h1>
-                <h1>DIV5</h1>
+
+                <div class="content_gallery">
+                    <video src="assets/video5.mkv" class="content_video" controls></video>
+                </div>
+
+                <div class="content_text"> 
+                    <br>The fifth project is a simple calculator. I made it about the same time as the game "Rocks paper scissors",
+                    namely on December 16, to practice working with <span class=span_modules>Tkinter</span>, because I was interested in this topic.
+
+                    <br><br><br><span style="font-size: 24px;">About code: </span><br><br>
+                    As usual, I used <span class=span_modules>Python</span> because I didn't know any other language at the time.
+                    The program is really easy, there is nothing special about it and it wasn't hard to write it. I use 5 different 
+                    functions, to make some actions with numbers (functions plus, minus, divide etc.)
+                    
+                    <br><br>Github link: <a href="https://github.com/Fykke/Calculators" target="_blank" class="content_github_link">
+                        https://github.com/Fykke/Calculators 
+                    </a><br>
+                    <span class=span_modules>(There are different versions of calculator on my github, you can try
+                        any of them. But this one (TkCalculator.py) is the best from the technical side)</span>
+                </div>
+
             </div>
 
             <div id="div6" style="display:none" class="contentdivs">
-                <h1 class="content_head">Just a meme</h1>
-                <h1>DIV6</h1>
-                <h1>DIV6</h1>
-                <h1>DIV6</h1>
-                <h1>DIV6</h1>
-                <h1>DIV6</h1>
-                <h1>DIV6</h1>
-                <h1>DIV6</h1>
+                <h1 class="content_head">Meme projects</h1>
+                
+                <div class="content_gallery">
+                    <video src="assets/video6_1.mkv" class="content_video" controls></video>
+                </div>
+                <div class="content_gallery" style="float:left">
+                    <video src="assets/video6_2.mkv" class="content_video" controls></video>
+                </div>
+                <div class="content_gallery" style="float:left">
+                    <video src="assets/video6_3.mkv" class="content_video" controls></video>
+
+                    Github link: <a href="https://github.com/Fykke/memes" target="_blank" class="content_github_link">
+                        https://github.com/Fykke/memes
+                    </a><br>
+                </div>
+
+                
             </div>
 
         </div>

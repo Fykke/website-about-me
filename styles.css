@@ -91,6 +91,10 @@ body {
     font-size : 26px;
 }
 
+.navbar_button:hover {
+    background-color: #d3caca;
+}
+
 .content_ul {
     margin-left: 1vw;
 }
@@ -190,6 +194,15 @@ a:active {
     border-radius: 7px;
     border: 2px solid #242020;
     object-fit: fill;
+}
+
+#div4 .content_video, #div5 .content_video {
+    height: 37vh;
+    margin-top: 0vh;
+}
+
+#div6 .content_video {
+    margin-top: 0vh;
 }
 
 .content_photo {
