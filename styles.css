@@ -192,7 +192,7 @@ body {
     font-size: 18px;
     border-radius: 1px;
     width: 4.8vw;
-    height: 58.3%;
+    height: 58.4%;
     margin-top: 0;
     position: absolute;
     background: rgb(61, 55, 55);
@@ -208,12 +208,11 @@ body {
     float: right;
 }
 
-#div6 {height: 81vh;}
 #div6_video_gallery {
     display: flex;
     width: 60%;
     margin: 0px auto;
-    height: 80%;
+    min-height: 76.9vh;
     object-fit: fill;
     text-align: center;
 }
@@ -221,9 +220,10 @@ body {
 #video_6div video{
     object-fit: fill;
     width: 80%;
-    height: 90%;
+    height: 76%;
     outline: solid 1px black;
 }
+
 
 #div_for_vid_number {
     text-align: center;
