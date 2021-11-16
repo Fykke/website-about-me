@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: bisque;
+    background-color: rgb(97, 86, 86);
 }
 
 .header {
@@ -47,7 +47,7 @@ body {
 }
 
 .contentdivs {
-    background-color: aliceblue;
+    background-color: rgb(143, 144, 146);
     min-height: 81vh;
     border: 2px solid #242020;
     border-radius: 7px;
@@ -58,7 +58,7 @@ body {
 }
 
 #navbar {
-    background-color: aliceblue;
+    background-color: rgb(143, 144, 146);
     min-height: 81vh;
     border: 2px solid #242020;
     border-radius: 7px;
@@ -114,7 +114,6 @@ body {
 
 .footer {   
     background-color: #242020;
-    color: rgb(144, 205, 238);
     margin-top: auto;
     min-height: 5.6vh;
     display: flex;
@@ -129,30 +128,22 @@ body {
     padding-right: 3vw;
 }
 
-a {
-    color: inherit; 
-}
-
-a:hover {
-    color: rgb(8, 121, 182);
-}
-
-a:active {
-    text-decoration: none;
-    color: rgb(217, 240, 252);
-}
-
 .span_modules {
     font-style: italic;
 }
 
-.content_github_link {
-    color: rgb(8, 121, 182);
+.content_github_link, a, .footer {
+    color: #ffdb3d;
     font-style: italic;
 }
 
-.content_github_link:hover{
-    color: rgb(82, 187, 243);
+.content_github_link:hover, a:hover{
+    color: #fbff00;
+}
+
+.content_github_link:active, a:active {
+    text-decoration: none;
+    color: #d3caca;
 }
 
 #mail {
@@ -196,8 +187,50 @@ a:active {
     margin-top: 0vh;
 }
 
-#div6 .content_video {
-    margin-top: 0vh;
+.video_button {
+    color: rgb(177, 156, 38);
+    font-size: 18px;
+    border-radius: 1px;
+    width: 4.8vw;
+    height: 58.3%;
+    margin-top: 0;
+    position: absolute;
+    background: rgb(61, 55, 55);
+    transition-duration: 0.3s;
+    outline: solid 1px black;
+}
+
+.video_button:hover {
+    background: rgb(139, 139, 136)
+}
+
+#right_video_button {
+    float: right;
+}
+
+#div6 {height: 81vh;}
+#div6_video_gallery {
+    display: flex;
+    width: 60%;
+    margin: 0px auto;
+    height: 80%;
+    object-fit: fill;
+    text-align: center;
+}
+
+#video_6div video{
+    object-fit: fill;
+    width: 80%;
+    height: 90%;
+    outline: solid 1px black;
+}
+
+#div_for_vid_number {
+    text-align: center;
+    margin-top: -3%;
+    margin-bottom: 2vh;
+    font-size: 24px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .content_photo {
