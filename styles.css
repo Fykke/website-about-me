@@ -23,6 +23,7 @@ body {
     float: right;
     height: 10vh;
     width: 6.3vw;
+    animation: right-load 1100ms cubic-bezier(0, 0.46, 0.24, 0.99);
 }
 
 #photo {
@@ -34,6 +35,7 @@ body {
 #logo_container {
     height: 10vh;
     width: 6.3vw;
+    animation: left-load 1700ms cubic-bezier(0, 0.46, 0.24, 0.99);
 }
 
 #logo_link:hover {
@@ -66,6 +68,7 @@ body {
     margin-left: 0.3vw;
     margin-bottom: 0.5vh;
     width: 14.45vw;
+    animation: left-load 1000ms cubic-bezier(0, 0.46, 0.24, 0.99);
 }
 
 #content {
@@ -73,6 +76,7 @@ body {
     margin-left: 0.3vw;
     margin-right: 0.3vw;
     width: 86vw;
+    animation: right-load 1000ms cubic-bezier(0, 0.46, 0.24, 0.99);
 }
 
 .navbar_button {
@@ -87,6 +91,10 @@ body {
 }
 
 .navbar_button:hover {
+    background-color: #d3caca;
+}
+
+.navbar_button:active {
     background-color: #d3caca;
 }
 
@@ -268,4 +276,22 @@ body {
 .gallery_button:hover {
     color:rgba(255, 255, 255, 0.8);
     background: rgba(255, 255, 255, 0.1);
+}
+
+@keyframes left-load {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes right-load {
+    0% {
+        transform: translateX(200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
