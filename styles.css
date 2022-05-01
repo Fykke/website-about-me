@@ -6,11 +6,11 @@
 }
 
 body {
-    background-color: rgb(97, 86, 86);
+    background-color: rgb(255, 255, 255);
 }
 
 .header {
-    background-color: #242020;
+    background-color: #252525;
     display: block;
     width: 100%;
     height: 10vh;
@@ -19,7 +19,7 @@ body {
 }
 
 #photo_container {
-    background-color: #382f2f;
+    background-color: #424242;
     float: right;
     height: 10vh;
     width: 6.3vw;
@@ -43,59 +43,49 @@ body {
 }
 
 .main {
-    margin-top: 0.04vh;
     display: flex;
     font-family: 'Varela Round', sans-serif;
 }
 
 .contentdivs {
-    background-color: rgb(143, 144, 146);
-    min-height: 81vh;
+    background-color: rgb(155, 155, 155);
+    min-height: 82vh;
     border: 2px solid #242020;
-    border-radius: 7px;
     padding-left: 2.55vw;
     padding-right: 2.55vw;
     padding-top: 2vh;
-    margin-bottom: 0.5vh;
 }
 
 #navbar {
-    background-color: rgb(143, 144, 146);
-    min-height: 81vh;
+    background-color: rgb(155, 155, 155);
+    min-height: 82vh;
     border: 2px solid #242020;
-    border-radius: 7px;
-    margin-top: 0.4vh;
-    margin-left: 0.3vw;
-    margin-bottom: 0.5vh;
     width: 14.45vw;
     animation: left-load 1000ms cubic-bezier(0, 0.46, 0.24, 0.99);
 }
 
 #content {
-    margin-top: 0.5vh;
-    margin-left: 0.3vw;
-    margin-right: 0.3vw;
     width: 86vw;
     animation: right-load 1000ms cubic-bezier(0, 0.46, 0.24, 0.99);
 }
 
 .navbar_button {
-    background-color: #979292;
+    background-color: #2b2b2b;
+    color: white;
     width: 100%;
     padding-left: 1vw;
     padding-right: 1vw;
     padding-top: 2vh;
     padding-bottom: 2vh;
-    border-radius: 7px;
     font-size : 16px;
 }
 
 .navbar_button:hover {
-    background-color: #d3caca;
+    background-color: #575757;
 }
 
 .navbar_button:active {
-    background-color: #d3caca;
+    background-color: #000000;
 }
 
 .content_ul {
@@ -121,7 +111,7 @@ body {
   }
 
 .footer {   
-    background-color: #242020;
+    background-color: #252525;
     margin-top: auto;
     min-height: 5.6vh;
     display: flex;
@@ -141,12 +131,12 @@ body {
 }
 
 .content_github_link, a, .footer {
-    color: #ffdb3d;
+    color: #ffffff;
     font-style: italic;
 }
 
 .content_github_link:hover, a:hover{
-    color: #fbff00;
+    color: #fff0f0;
 }
 
 .content_github_link:active, a:active {
@@ -196,14 +186,14 @@ body {
 }
 
 .video_button {
-    color: rgb(177, 156, 38);
+    background-color: #2b2b2b;
+    color: white;
     font-size: 18px;
     border-radius: 1px;
     width: 4.8vw;
     height: 58.4%;
     margin-top: 0;
     position: absolute;
-    background: rgb(61, 55, 55);
     transition-duration: 0.3s;
     outline: solid 1px black;
 }
